@@ -1,0 +1,41 @@
+.main-hero{
+    background-image: url(../img/dj.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-overlay{
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last parameter (0.5) for opacity */
+    padding: 0;
+    margin: 0;
+}
+
+.residencies{
+    margin-top: -30px;
+    -webkit-mask: linear-gradient(#0000, #000 30px);
+            mask: linear-gradient(#0000, #000 30px);
+	background: linear-gradient(-45deg, #000000, #4b0000, #000000, #234111);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.residency{
+    background-position: center;
+    background-size: cover;
+}
+
+.border-dashed{
+	--bs-border-style: dashed;
+}
